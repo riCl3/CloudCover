@@ -2,6 +2,12 @@
 
 A sleek and modern Flutter app that gives you **real-time weather updates** and **breaking news headlines**, all in one place. Designed with clean architecture and API integrations, this project is ideal for demonstrating Flutter development, API consumption, and UI structuring.
 
+# Important
+Due to some glitches, I had to change the settings so that gradle uses jdk-17 (changes in the gradle.properties). I reverted in the github version. If you face any problem while running the app please follow the forcefull execution by adding these set of lines at the end of gradle.properties
+```
+org.gradle.java.home=C:\\Program Files\\Java\\jdk-17
+```
+
 ## 🚀 Features
 
 ### 🌤️ Weather Section
