@@ -1,16 +1,65 @@
-# weatherapp
+# 🌦️📰 CloudCover: Get News of World and Clouds
 
-A new Flutter project.
+A sleek and modern Flutter app that gives you **real-time weather updates** and **breaking news headlines**, all in one place. Designed with clean architecture and API integrations, this project is ideal for demonstrating Flutter development, API consumption, and UI structuring.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+### 🌤️ Weather Section
+- Live weather data fetched using **OpenWeatherMap API**
+- Location-based temperature, humidity, wind speed, and status
+- Clean and user-friendly UI
 
-A few resources to get you started if this is your first Flutter project:
+### 📰 News Section
+- Latest news fetched via **NewsAPI**
+- Multiple filters like:
+  - Apple (by popularity)
+  - Tesla (recent)
+  - Business in the US
+  - TechCrunch headlines
+  - Wall Street Journal coverage
+- Clickable news cards with titles, images, and links
+- Opens news in the browser via `url_launcher`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 🧭 Navigation
+- Integrated **bottom navigation bar** to toggle between:
+  - Weather
+  - News
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tech Stack
+
+- **Flutter** (Latest Stable)
+- **Dart** Language
+- **OpenWeatherMap API** for weather data
+- **NewsAPI.org** for news headlines
+- **Provider / Riverpod** (optional for state management)
+- **Dio or http** for API calls
+- **flutter_dotenv** for API key management
+- **url_launcher** to open news links in the browser
+
+# Register your .env in pubspec.yaml:
+```bash
+flutter:
+  assets:
+    - .env
+```
+
+# Load it in main.dart:
+```
+await dotenv.load(fileName: ".env");
+```
+# Getting Started
+## Clone the repository:
+```
+git clone https://github.com/your-username/weather-news-app.git
+cd weather-news-app
+```
+
+## Install dependencies:
+```
+flutter pub get
+```
+
+## Run the app:
+```
+flutter run
+```
